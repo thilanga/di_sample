@@ -1,10 +1,11 @@
 {
-    "require": {
-        "illuminate/container": "^5.6"
-    },
-    "autoload": {
-        "psr-4": {
-            "Sample\\": "src/Sample/"
-        }
+  "require": {
+    "php": "^7.2",
+    "illuminate/container": "^5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sample\\": "src/Sample/"
     }
+  }
 }

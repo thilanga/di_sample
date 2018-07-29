@@ -23,6 +23,6 @@ class Track implements ITrack
 
     public function play()
     {
-        echo 'Google Music Track name goes here!';
+        echo 'Google Music: Track name goes here!';
     }
 }

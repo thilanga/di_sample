@@ -23,6 +23,6 @@ class Track implements ITrack
 
     public function play()
     {
-        echo 'Spotify Track name goes here!';
+        echo 'Spotify: Track name goes here!';
     }
 }

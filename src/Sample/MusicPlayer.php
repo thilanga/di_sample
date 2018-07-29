@@ -3,8 +3,8 @@
 
 namespace Sample;
 
-
 use Sample\Contracts\IMusicService;
+use Sample\Contracts\ITrack;
 
 class MusicPlayer
 {
@@ -17,6 +17,8 @@ class MusicPlayer
 
     public function play()
     {
-        return $this->musicService->fetchTrack();
+        /** @var ITrack $track */
+        $track = $this->musicService->fetchTrack();
+        $track->play();
     }
 }

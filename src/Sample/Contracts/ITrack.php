@@ -4,11 +4,13 @@
 namespace Sample\Contracts;
 
 
-interface Track
+interface ITrack
 {
     public function getName(): string;
 
     public function getArtist(): string;
 
     public function getTrackPath(): string;
+
+    public function play();
 }

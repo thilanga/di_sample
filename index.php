@@ -2,9 +2,9 @@
 require __DIR__ . '/vendor/autoload.php';
 
 use Sample\MusicPlayer;
-use Sample\Services\GoogleMusic;
+use Sample\Services\Google\GoogleMusic;
 
 $googleMusic = new GoogleMusic();
 $musicPlayer = new MusicPlayer((new GoogleMusic()));
 
-echo $musicPlayer->play();
+$musicPlayer->play();

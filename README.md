@@ -1,4 +1,5 @@
-#Simple di example project
+# Simple dependency injection example project
+
 
 Build the docker image using the Dockerfile
 ```bash

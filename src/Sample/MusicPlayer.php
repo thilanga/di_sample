@@ -13,8 +13,8 @@ class MusicPlayer
         $this->musicService = $musicService;
     }
 
-    public function greet()
+    public function play()
     {
-        return $this->musicService->hello();
+        return $this->musicService->fetchTrack();
     }
 }

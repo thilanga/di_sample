@@ -7,9 +7,19 @@ use Sample\Contracts\IMusicService;
 
 class GoogleMusic implements IMusicService
 {
-    public function hello(): string
+    public function auth()
     {
-        return 'I\'m Google Music. How are you doing today?';
+        // TODO: Implement auth() method.
+    }
+
+    public function fetchPlayList()
+    {
+        // TODO: Implement fetchPlayList() method.
+    }
+
+    public function fetchTrack()
+    {
+        // TODO: Implement fetchTrack() method.
     }
 
 }

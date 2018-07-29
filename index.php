@@ -7,4 +7,4 @@ use Sample\Services\GoogleMusic;
 $googleMusic = new GoogleMusic();
 $musicPlayer = new MusicPlayer((new GoogleMusic()));
 
-echo $musicPlayer->greet();
+echo $musicPlayer->play();

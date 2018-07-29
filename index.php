@@ -1,8 +1,10 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
-use Sample\A;
+use Sample\MusicPlayer;
+use Sample\Services\GoogleMusic;
 
-$a = new A();
+$googleMusic = new GoogleMusic();
+$musicPlayer = new MusicPlayer((new GoogleMusic()));
 
-echo $a->hello();
+echo $musicPlayer->greet();

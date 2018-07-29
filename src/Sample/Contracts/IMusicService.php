@@ -1,10 +1,8 @@
 <?php
 
+namespace Sample\Contracts;
 
-class IMusicService
+interface IMusicService
 {
-    public function hello(): string
-    {
-
-    }
+    public function hello(): string;
 }

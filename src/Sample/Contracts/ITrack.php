@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Sample\Contracts;
-
 
 interface ITrack
 {

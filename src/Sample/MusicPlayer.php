@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Sample;
 
 use Sample\Contracts\IMusicService;

@@ -1,11 +1,11 @@
 <?php
 
-namespace Sample\Services\Google;
+namespace Sample\Services\Spotify;
 
 use Sample\Contracts\IMusicService;
 use Sample\Contracts\ITrack;
 
-class GoogleMusic implements IMusicService
+class SpotifyMusic implements IMusicService
 {
     private $track;
 

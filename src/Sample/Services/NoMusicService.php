@@ -1,18 +1,18 @@
 <?php
 
-namespace Sample\Services\Google;
+namespace Sample\Services;
 
 use Sample\Contracts\IMusicService;
 use Sample\Contracts\ITrack;
 
-class GoogleMusic implements IMusicService
+class NoMusicService implements IMusicService
 {
-    const SERVICE_NAME = 'Google';
+    const SERVICE_NAME = 'No Service';
     private $track;
 
     public function getName(): string
     {
-        // TODO: Implement getName() method.
+        return self::SERVICE_NAME;
     }
 
     public function fetchPlayList()
@@ -26,7 +26,7 @@ class GoogleMusic implements IMusicService
     public function fetchTrack(): ITrack
     {
         $this->auth();
-        $this->track = new Track();
+        $this->track = new NoTrack();
 
         return $this->track;
     }

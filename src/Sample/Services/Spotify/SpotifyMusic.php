@@ -7,7 +7,13 @@ use Sample\Contracts\ITrack;
 
 class SpotifyMusic implements IMusicService
 {
+    const SERVICE_NAME = 'Spotify';
     private $track;
+
+    public function getName(): string
+    {
+        // TODO: Implement getName() method.
+    }
 
     public function fetchPlayList()
     {

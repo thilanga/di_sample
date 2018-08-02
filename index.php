@@ -1,6 +1,7 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
+use Illuminate\Container\Container;
 use Sample\Contracts\IMusicService;
 use Sample\MusicPlayer;
 use Sample\Services\Google\GoogleMusic;
@@ -8,7 +9,7 @@ use Sample\Services\NoMusicService;
 use Sample\Services\Spotify\SpotifyMusic;
 
 // Create new IoC Container instance
-$container = new Illuminate\Container\Container;
+$container = Container::getInstance();
 
 $container->singleton(IMusicService::class, function ($app) {
     switch (strtolower($_GET['user'])) {

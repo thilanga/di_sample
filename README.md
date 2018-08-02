@@ -1,24 +1,19 @@
 # Simple dependency injection example project
 
 
-Build the docker image using the Dockerfile
+Run the container
 ```bash
-docker build -t phpd .
-```
-
-Run below command to bring the container up
-```bash
-docker run -d -p 80:80 -v "$PWD":/app --name simple phpd
+docker-compose up -d --build
 ```
 
 Check the running container in browser
 ```bash
-# thilanga's Music Service
-http://localhost?user=thilanga
+# Alice's Music Service
+http://localhost:8080?user=alice
  
-# pittado's Music Service
-http://localhost?user=pittado
+# Bob's Music Service
+http://localhost:8080?user=bob
 
 # No user
-http://localhost
+http://localhost:8080
 ```
